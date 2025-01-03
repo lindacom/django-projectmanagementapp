@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+
+{% load static %} 
+{% block title %}Agile Project Management {% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+<h1>Agile Project Management</h1>
+<div><p>Agile is often used for software projects when the full scope of the project is not known.</p>
+
+ <p> Agile has a very strong focus on principle. </p>
+ <p><strong>Product descriptions</strong> (sometimes written as user stories), <strong>quality criteria</strong> and <strong>quality tolerances</strong> can be prioritised to provide flexibility in what is being delivered.</p>
+ <p><strong> Benefits</strong> are delivered early, <strong>change</strong> is handled dynamically and reduced <strong>risk</strong> because delivery is incremental.</p>
+  
+<p>Prince2 management stages can be aligned with a series of sprints or releases to support a fail fast and learn fast environment.</p>
+
+<p>Agile:</p>
+<ul>
+<li>Uses a <strong>timeboxed</strong> and <strong>iterative</strong> approach to delivery and or </li>
+<li>Uses a collection of <strong>techniques</strong> (e.g. daily stand up meetings, sprints and user stories) and or</li>
+<li>Uses the SCRUM framework</li>
+</ul>
+
+<h2>Fundamental values and principles of agile</h2>
+<h3>Values</h3>
+<ul>
+  <li>Individuals and interactions over processes and tools.</li>
+  <li>Working software over comprehensive documentation.</li>
+  <li>Customer collaboration over contract negotiation.</li>
+  <li>Responding to change over following a plan.</li>
+</ul>
+
+<h3>Principles</h3>
+<p>There are 12 principles behind the Agile manifesto:</p>
+<ol>
+<li>Satisfy the customer</li>
+<li>Welcome change</li>
+<li>Deliver frequently</li>
+<li>Working together</li>
+<li>Trust people to get the job done</li>
+<li>Face to face conversation</li>
+<li>Working software primary measure of progress</li>
+<li>Maintain a constant pace</li>
+<li>Continuous attention to technical excellence and good design</li>
+<li>Simplicity</li>
+<li>Self organising teams</li>
+<li>Reflect on how to become more effective and adjust behaviour accordingly</li>
+</ol>
+
+<h3>Behaviours</h3>
+  <p>Behaviours need to function smoothly for agile to operate in the most effective way.</p>
+  <ul>
+  <li>Transparency</li>
+  <li>Collaboration</li>
+  <li>Rich communication</li>
+  <li>Self organisation</li>
+  <li>Exploration</li>
+</ul>
+<h2>Agile Project Management Frameworks</h2>
+<h3>Waterfall</h3>
+<p>A development approach that is linear and sequential with distinct goals for each phase of development. Earlier stages are not revisited.</p>
+
+<h3>SCRUM</h3>
+<p>Scrum is a framework within which people can address complex, adaptive problems, while productively and creatively delivering products of the highest possible value. </p>
+<p>The scrum team consists of:</p>
+<ul>
+<li> product owner who owns the backlog and prioritises items, </li>
+  <li>development team, </li>
+    <li>scrum master who helps the team to follow agile principles without controlling what they do.</li>
+    </ul>
+
+    <h3>Kanban</h3>
+
+   <p> A way to improve flow through visualisation and controlling work in progress.</p>
+   <p> The focus is on getting work done as soon as possible.</p>
+   <p> Kanban boards can be used to show items ready, build, test and deploy (done or ready). Work in progress limits are defined by the team.</p>
+   <p> Kanban is not a project management framework and a project manager role is not defined in it. Kanban can be used on a project as part of an approach to delivering products.</p>
+
+     <a class="btn btn-primary btn-lg" href="{% url 'projectactivities' %}" role="button">Project Activities</a>
+     <a class="btn btn-secondary btn-lg" href="#" role="button">Resources</a>
+
+
+</div>
+{% endblock %}

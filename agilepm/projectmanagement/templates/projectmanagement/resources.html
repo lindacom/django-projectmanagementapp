@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% load embed_video_tags %}
+
+{% load static %} 
+
+{% block title %}Project Management {% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+<h1>Resources</h1>
+
+<h2>Videos</h2>
+<div class="container">
+{% for item in videos %}
+<div>
+{%video item.url '426x240' %}
+{{ item.title }} </div>
+{% endfor %}
+</div>
+
+<h2>Articles and quizzes</h2>
+{% for item in articles %}
+<a href="{{ item.url }}" target="_blank">{{ item.title }}</a>
+{% endfor %}
+
+
+      </div>
+
+
+
+{% endblock %}

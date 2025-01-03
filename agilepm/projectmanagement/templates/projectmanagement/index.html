@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+
+{% load static %} 
+{% block title %}Project Management {% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+<h1>Project Management</h1>
+<p>Welcome</p>
+
+<table>
+  <thead>
+        <tr>
+      <th width="200">Role</th>
+      <th>Responsibilities</th>
+   
+ 
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Executive</td>
+      <td>
+<a class="btn btn-secondary btn-lg" href="{% url 'projectmanagement' %}" role="button">Project management</a></td></tr></tbody>
+
+<tbody>
+  <tr>
+    <td>Executive</td>
+    <td>
+      <a class="btn btn-secondary btn-lg" href="{% url 'projectactivities' %}" role="button">Project Activities</a></td></tr></tbody>
+
+      <tbody>
+        <tr>
+          <td>Executive</td>
+          <td>
+            <a class="btn btn-secondary btn-lg" href="{% url 'agile' %}" role="button">Agile project management</a></td></tr></tbody>
+
+         
+            <tbody>
+              <tr>
+                <td>Executive</td>
+                <td>
+                  <a class="btn btn-secondary btn-lg" href="{% url 'projectactivities' %}" role="button">Resources</a></td></tr></tbody>
+
+</table>
+
+
+
+
+
+      </div>
+{% endblock %}

@@ -21,6 +21,9 @@ from projectmanagement import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+     path('', views.index, name='home'),
     path('projectmanagement/', views.projectmanagement, name='projectmanagement'),
     path('projectactivities/', views.projectactivities,  name='projectactivities'),
+    path('agile/', views.agileprojectmanagement,  name='agile'),
+    path('resources/', views.resources,  name='resources'),
 ]
